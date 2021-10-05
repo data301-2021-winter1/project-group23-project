@@ -23,8 +23,7 @@ The data set we are using is from Natural Stat Trick as they have the most relia
 
 ## Images
 
-<img src ="NHL LOGO.png" width="100px">
-
+![NHL LOGO](https://user-images.githubusercontent.com/90356931/136103389-33e1d983-ae09-483a-8386-e9f5f0ab7a9e.png)
 
 ## References
 
