@@ -9,6 +9,8 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 The 2020-21 NHL season was one for the history books as Covid-19 forced the NHL to create four separate divisions (North, Pacific, Central, and Atlantic). Only inter-divisional play took place during the regular season to limit the amount of physical contact between teams. This didn't stop Covid-19 outbreaks from occurring throughout the season as many players and coaching staff caught the virus. When a team conducted a case of Covid-19, they would have to isolate and miss substantial time before returning to play. Many teams missed up to two weeks of games and on-ice training to these outbreaks throughout the season. This project will analyze how Covid-19 outbreaks affected a teams play after having substantial time off and if that substantial time off affected a team’s overall finish in the standings. We are very interested in exploring this data to see how teams fared after Covid-19 outbreaks as this is the first time the NHL has experienced anything like this. A Dashboard will work exceptionally well with this data as it can be graphed and organized efficiently and be presented in a professional manner.  
 
+Kyle- This data set was of great interest to myself as I grew up playing, watching and being consumed in the world of sports especially professional hockey. This topic of the National Hockey League and especially the Covid-19 season was of great interest for me as through Covid-19 not only sporting teams were being affected by the virus but also everyone on the planet. It dramatically affected a person’s mental wellbeing as well as their physical wellbeing. Thus, the Covid-19 NHL season statistics were a perfect fit. I would really like this analytics project to help sports fans and general society see the adverse effects of Coronavirus on a professional sporting league which is all about being in the best shape mentally and physically. The NHL was forced to created 4 divisions to geographically split up the teams. The North division comprised of all the Canadian teams was seen as the “weakest” division. I want to put this to the test, I will do this through comparing the North Divisions stats described below, and the other three American divisions seen as the “stronger” divisions.  his will be able to provide clarity on if Covid-19 divisions affect outcomes of the NHL.
+
 
 ## About Our Data Set
 
@@ -18,7 +20,7 @@ The data that is being provided for this project is from Natural Stat Trick. The
 ## Team Members
 
 - Brett Pfliger - I am a Earth and Environmental Science Major who loves sports, workingout, playing guitar, and being social.
-- Kyle Burt - 
+- Kyle Burt - I am a Economics Major who loves all sports, working out, Kelowna weather and nice Okanagan Ciders. 
 
 
 ## Images
