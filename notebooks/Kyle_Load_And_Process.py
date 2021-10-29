@@ -1,7 +1,7 @@
-def load_and_process(path_to_csv_file):
     import pandas as pd
     import seaborn as sns
     import numpy as np
+def load_and_process(path_to_csv_file):
     datak = (pd.read_csv(path_to_csv_file)
     .drop(columns =['CF','CA','SCF','SCA','Unnamed: 2'])
     )
@@ -11,9 +11,6 @@ dframe= load_and_process("../data/raw/Games - Natural Stat TrickTeam Season Tota
 dframe
 
 def North_Div1(datak):
-    import pandas as pd
-    import seaborn as sns
-    import numpy as np
     datak1 = (datak.drop(datak[datak.Team.isin([ "Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", 
                                         "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Detroit Red Wings", "Florida Panthers",
                                         "Los Angeles Kings", "Minnesota Wild", "Nashville Predators", "Pittsburgh Penguins", "San Jose Sharks", "Tampa Bay Lightning",
@@ -26,9 +23,6 @@ def North_Div1(datak):
     return datak1
 
 def East_Div1(datak):
-    import pandas as pd
-    import seaborn as sns
-    import numpy as np
     datak2 = (datak.drop(datak[datak.Team.isin(["Arizona Coyotes", "Carolina Hurricanes", "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks", "Colorado Avalanche", 
                                        "Dallas Stars", "Detroit Red Wings", "Florida Panthers", "Los Angeles Kings", "Minnesota Wild", "Nashville Predators", "San Jose Sharks", 
                                        "Tampa Bay Lightning", "St Louis Blues", "Vegas Golden Knights", "Edmonton Oilers", "Montreal Canadiens","Ottawa Senators",
@@ -41,9 +35,6 @@ def East_Div1(datak):
     return datak2
 
 def Cent_Div1(datak):
-    import pandas as pd
-    import seaborn as sns
-    import numpy as np
     datak3 = (datak.drop(datak[datak.Team.isin(["Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Calgary Flames","Colorado Avalanche"
                                         ,"Los Angeles Kings", "Minnesota Wild","Pittsburgh Penguins", "San Jose Sharks", "St Louis Blues", "Vegas Golden Knights",
                                         "Edmonton Oilers", "Montreal Canadiens", "New Jersey Devils", "New York Islanders", 
@@ -57,9 +48,6 @@ def Cent_Div1(datak):
     return datak3
 
 def West_Div1(datak):
-    import pandas as pd
-    import seaborn as sns
-    import numpy as np
     datak4 = (datak.drop(datak[datak.Team.isin(["Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", 
                                         "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks",  "Dallas Stars", "Detroit Red Wings", "Florida Panthers",
                                        "Nashville Predators", "Pittsburgh Penguins","Tampa Bay Lightning","Edmonton Oilers", "Montreal Canadiens",
@@ -73,9 +61,6 @@ def West_Div1(datak):
     return datak4
 
 def all_divisions_describe(datak):
-    import pandas as pd
-    import seaborn as sns
-    import numpy as np
     
     datak1 = (datak.drop(datak[datak.Team.isin([ "Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", 
                                         "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Detroit Red Wings", "Florida Panthers",
