@@ -1,15 +1,14 @@
-    import pandas as pd
-    import seaborn as sns
-    import numpy as np
+import pandas as pd
+import seaborn as sns
+import numpy as np
+#Importing processed csv file
 def load_and_process(path_to_csv_file):
     datak = (pd.read_csv(path_to_csv_file)
     .drop(columns =['CF','CA','SCF','SCA','Unnamed: 2'])
     )
     return datak
 
-dframe= load_and_process("../data/raw/Games - Natural Stat TrickTeam Season Totals - Natural Stat Trick.csv")
-dframe
-
+#Creating north division, by dropping all teams that were not in the division, then dropping the team name and index and creating a column for the division name. 
 def North_Div1(datak):
     datak1 = (datak.drop(datak[datak.Team.isin([ "Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", 
                                         "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Detroit Red Wings", "Florida Panthers",
@@ -21,7 +20,7 @@ def North_Div1(datak):
              )
     datak1['Division']='North'
     return datak1
-
+#Creating east division, by dropping all teams that were not in the division, then dropping the team name and index and creating a column for the division name. 
 def East_Div1(datak):
     datak2 = (datak.drop(datak[datak.Team.isin(["Arizona Coyotes", "Carolina Hurricanes", "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks", "Colorado Avalanche", 
                                        "Dallas Stars", "Detroit Red Wings", "Florida Panthers", "Los Angeles Kings", "Minnesota Wild", "Nashville Predators", "San Jose Sharks", 
@@ -33,7 +32,7 @@ def East_Div1(datak):
              )
     datak2['Division']='East'
     return datak2
-
+#Creating central division, by dropping all teams that were not in the division, then dropping the team name and index and creating a column for the division name. 
 def Cent_Div1(datak):
     datak3 = (datak.drop(datak[datak.Team.isin(["Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Calgary Flames","Colorado Avalanche"
                                         ,"Los Angeles Kings", "Minnesota Wild","Pittsburgh Penguins", "San Jose Sharks", "St Louis Blues", "Vegas Golden Knights",
@@ -46,7 +45,7 @@ def Cent_Div1(datak):
              )
     datak3['Division']='Central'
     return datak3
-
+#Creating west division, by dropping all teams that were not in the division, then dropping the team name and index and creating a column for the division name. 
 def West_Div1(datak):
     datak4 = (datak.drop(datak[datak.Team.isin(["Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", 
                                         "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks",  "Dallas Stars", "Detroit Red Wings", "Florida Panthers",
@@ -59,7 +58,7 @@ def West_Div1(datak):
              )
     datak4['Division']='West'
     return datak4
-
+# Creating all divisons as a concat of all of above divisions to compare. 
 def all_divisions_describe(datak):
     
     datak1 = (datak.drop(datak[datak.Team.isin([ "Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", 
