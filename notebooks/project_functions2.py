@@ -1,14 +1,12 @@
-    import pandas as pd
-    import seaborn as sns
-    import numpy as np
+import pandas as pd
+import seaborn as sns
+import numpy as np
 def load_and_process(path_to_csv_file):
     datak = (pd.read_csv(path_to_csv_file)
     .drop(columns =['CF','CA','SCF','SCA','Unnamed: 2'])
     )
     return datak
 
-dframe= load_and_process("../data/raw/Games - Natural Stat TrickTeam Season Totals - Natural Stat Trick.csv")
-dframe
 
 def North_Div1(datak):
     datak1 = (datak.drop(datak[datak.Team.isin([ "Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", 
