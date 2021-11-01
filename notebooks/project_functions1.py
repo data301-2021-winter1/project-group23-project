@@ -33,6 +33,8 @@ def Canucks_After_Data(data):
     .reset_index().drop(columns = "index")
     .drop(columns =['level_0'])
     .drop(data.index[0:10]).drop(data.index[20:20])
+    .reset_index()
+    .rename(columns={'CF%':"CF% After",'SCF%':"SCF% After",'SH%':"SH% After",'SV%':"SV% After",'PDO':"PDO After"}).drop(columns="Team")
             )
     return data2
 
@@ -44,6 +46,8 @@ def Sabres_Before_Data(data):
     .drop(data.index[20:56])
     .drop(data.index[10:20])
     .drop(columns = "index")
+    .reset_index()
+    .rename(columns={'CF%':"CF% Before",'SCF%':"SCF% Before",'SH%':"SH% Before",'SV%':"SV% Before",'PDO':"PDO Before"}).drop(columns="Team")
         )  
     return data3
 
@@ -55,9 +59,59 @@ def Sabres_After_Data(data):
     .drop(data.index[0:10])
     .drop(data.index[20:56])
     .drop(columns = "index")
+    .reset_index()
+    .rename(columns={'CF%':"CF% After",'SCF%':"SCF% After",'SH%':"SH% After",'SV%':"SV% After",'PDO':"PDO After"}).drop(columns="Team")
         )
     return data4
 
+# Canucks Combined Function 
+
+def Canucks_Before_And_After(data):
+    data1 = (data.drop(data[data.Team.isin(["Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Detroit Red Wings", "Florida Panthers", "Los Angeles Kings", "Minnesota Wild", "Nashville Predators", "Pittsburgh Penguins", "San Jose Sharks", "Tampa Bay Lightning", "St Louis Blues", "Vegas Golden Knights", "Edmonton Oilers", "Montreal Canadiens", "New Jersey Devils", "New York Islanders", "New York Rangers", "Ottawa Senators", "Philadelphia Flyers", "Toronto Maple Leafs", "Winnipeg Jets", "Washington Capitals", "Anaheim Ducks"])].index)
+    .reset_index()
+    .drop(data.index[0:27]).drop(data.index[47:56])
+    .reset_index().drop(columns = "index")
+    .drop(columns =['level_0'])
+    .drop(data.index[10:20])
+    .reset_index()
+    .rename(columns={'CF%':"CF% Before",'SCF%':"SCF% Before",'SH%':"SH% Before",'SV%':"SV% Before",'PDO':"PDO Before"}).drop(columns="Team")
+            )
+     data2= (data.drop(data[data.Team.isin(["Arizona Coyotes", "Buffalo Sabres", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Detroit Red Wings", "Florida Panthers", "Los Angeles Kings", "Minnesota Wild", "Nashville Predators", "Pittsburgh Penguins", "San Jose Sharks", "Tampa Bay Lightning", "St Louis Blues", "Vegas Golden Knights", "Edmonton Oilers", "Montreal Canadiens", "New Jersey Devils", "New York Islanders", "New York Rangers", "Ottawa Senators", "Philadelphia Flyers", "Toronto Maple Leafs", "Winnipeg Jets", "Washington Capitals", "Anaheim Ducks"])].index)
+    .reset_index()
+    .drop(data.index[0:27]).drop(data.index[47:56])
+    .reset_index().drop(columns = "index")
+    .drop(columns =['level_0'])
+    .drop(data.index[0:10]).drop(data.index[20:20])
+    .reset_index()
+    .rename(columns={'CF%':"CF% After",'SCF%':"SCF% After",'SH%':"SH% After",'SV%':"SV% After",'PDO':"PDO After"}).drop(columns="Team")
+            )
+    DataCanucksBandA = (pd.concat([data1,data2], axis=1)
+                       )
+    return DataCanucksBandA
+    
+# Sabres Combined Function 
+
+def Sabres_Before_After(data):
+    data3 = (data.drop(data[data.Team.isin(["Arizona Coyotes", "Vancouver Canucks", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Detroit Red Wings", "Florida Panthers", "Los Angeles Kings", "Minnesota Wild", "Nashville Predators", "Pittsburgh Penguins", "San Jose Sharks", "Tampa Bay Lightning", "St Louis Blues", "Vegas Golden Knights", "Edmonton Oilers", "Montreal Canadiens", "New Jersey Devils", "New York Islanders", "New York Rangers", "Ottawa Senators", "Philadelphia Flyers", "Toronto Maple Leafs", "Winnipeg Jets", "Washington Capitals", "Anaheim Ducks"])].index)
+    .reset_index()
+    .drop(data.index[20:56])
+    .drop(data.index[10:20])
+    .drop(columns = "index")
+    .reset_index()
+    .rename(columns={'CF%':"CF% Before",'SCF%':"SCF% Before",'SH%':"SH% Before",'SV%':"SV% Before",'PDO':"PDO Before"}).drop(columns="Team")
+        )
+    data4 = (data.drop(data[data.Team.isin(["Arizona Coyotes", "Vancouver Canucks", "Boston Bruins", "Carolina Hurricanes", "Columbus Blue Jackets", "Calgary Flames", "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Detroit Red Wings", "Florida Panthers", "Los Angeles Kings", "Minnesota Wild", "Nashville Predators", "Pittsburgh Penguins", "San Jose Sharks", "Tampa Bay Lightning", "St Louis Blues", "Vegas Golden Knights", "Edmonton Oilers", "Montreal Canadiens", "New Jersey Devils", "New York Islanders", "New York Rangers", "Ottawa Senators", "Philadelphia Flyers", "Toronto Maple Leafs", "Winnipeg Jets", "Washington Capitals", "Anaheim Ducks"])].index)
+    .reset_index()
+    .drop(data.index[0:10])
+    .drop(data.index[20:56])
+    .drop(columns = "index")
+    .reset_index()
+    .rename(columns={'CF%':"CF% After",'SCF%':"SCF% After",'SH%':"SH% After",'SV%':"SV% After",'PDO':"PDO After"}).drop(columns="Team")
+        )
+    DataSabresBandA = (pd.concat([data3,data4], axis=1)
+                      )
+    return DataSabresBandA
+    
 # A function to show the statistics of selected variables for the top four functions.
 
 def Describe(data):
