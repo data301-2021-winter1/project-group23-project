@@ -1,0 +1,1931 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook source-build='2021.3.3 (20213.21.1018.0949)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AllowCalculationsForDensifiedMarks.true...AllowCalculationsForDensifiedMarks />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.ExtendTimeSeries.true...ExtendTimeSeries />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='AllDiv' inline='true' name='federated.1ar3oy40uje651130bsar01dkbr8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AllDiv' name='textscan.1xczkzj1u6o7b41bizfu70ymgsne'>
+            <connection class='textscan' directory='/Users/kyleburt/Data301/school/year4/project-group23-project/data/processed' filename='AllDiv.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xczkzj1u6o7b41bizfu70ymgsne' name='AllDiv.csv' table='[AllDiv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='datetime' date-parse-format='yyyy-MM-HH - &apos;Maple&apos; &apos;Leafs&apos; EEEE, &apos;Senators&apos; dd|#|#|yyyy-MM-dd - &apos;Stars&apos; HH, &apos;Red&apos; &apos;Wings&apos; EEEE|#|#|yyyy-MM-EEEEdd - &apos;Islanders&apos; HH, &apos;Capitals&apos; mm|#|#|yyyy-MM-HH - &apos;Blackhawks&apos; EEEE, &apos;Blue&apos; &apos;Jackets&apos; dd|#|#|yyyy-dd-MMMM - &apos;Bruins&apos; EEEE, &apos;Flyers&apos; HH' name='Game' ordinal='0' />
+            <column datatype='real' name='TOI' ordinal='1' />
+            <column datatype='real' name='CF%' ordinal='2' />
+            <column datatype='real' name='SCF%' ordinal='3' />
+            <column datatype='real' name='SH%' ordinal='4' />
+            <column datatype='real' name='SV%' ordinal='5' />
+            <column datatype='real' name='PDO' ordinal='6' />
+            <column datatype='string' name='Division' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1xczkzj1u6o7b41bizfu70ymgsne' name='AllDiv.csv' table='[AllDiv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='datetime' date-parse-format='yyyy-MM-HH - &apos;Maple&apos; &apos;Leafs&apos; EEEE, &apos;Senators&apos; dd|#|#|yyyy-MM-dd - &apos;Stars&apos; HH, &apos;Red&apos; &apos;Wings&apos; EEEE|#|#|yyyy-MM-EEEEdd - &apos;Islanders&apos; HH, &apos;Capitals&apos; mm|#|#|yyyy-MM-HH - &apos;Blackhawks&apos; EEEE, &apos;Blue&apos; &apos;Jackets&apos; dd|#|#|yyyy-dd-MMMM - &apos;Bruins&apos; EEEE, &apos;Flyers&apos; HH' name='Game' ordinal='0' />
+            <column datatype='real' name='TOI' ordinal='1' />
+            <column datatype='real' name='CF%' ordinal='2' />
+            <column datatype='real' name='SCF%' ordinal='3' />
+            <column datatype='real' name='SH%' ordinal='4' />
+            <column datatype='real' name='SV%' ordinal='5' />
+            <column datatype='real' name='PDO' ordinal='6' />
+            <column datatype='string' name='Division' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Game]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>Game</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOI]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>TOI</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CF%]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>CF%</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCF%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SCF%]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>SCF%</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SH%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SH%]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>SH%</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SV%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SV%]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>SV%</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PDO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PDO]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>PDO</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Division</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Division]</local-name>
+            <parent-name>[AllDiv.csv]</parent-name>
+            <remote-alias>Division</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+      </column>
+      <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+      <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+      <column caption='Scf%' datatype='real' name='[SCF%]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='SH% (bin)' datatype='integer' name='[SH% (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[SH%]' peg='0' size='2.9' />
+      </column>
+      <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[SV% (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[SV%]' peg='0' size='2.9' />
+      </column>
+      <column datatype='real' name='[SV%]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Scf% (bin)' datatype='integer' name='[Scf% (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[SCF%]' peg='0' size='2.69' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[TOI (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[TOI]' peg='0' size='1.31' />
+      </column>
+      <column datatype='real' name='[TOI]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='AllDiv.csv' datatype='table' name='[__tableau_internal_object_id__].[AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB]' role='measure' type='quantitative' />
+      <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+      <column-instance column='[SV% (bin)]' derivation='None' name='[none:SV% (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (CF% (bin),Division,YEAR(Game))' hidden='true' name='[Action (CF% (bin),Division,YEAR(Game))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:CF% (bin):ok]' />
+          <groupfilter function='level-members' level='[Division]' />
+          <groupfilter function='level-members' level='[tyr:Game:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Division)' hidden='true' name='[Action (Division)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Division]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Division,SH% (bin))' hidden='true' name='[Action (Division,SH% (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Division]' />
+          <groupfilter function='level-members' level='[SH% (bin)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Division,SV% (bin))' hidden='true' name='[Action (Division,SV% (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Division]' />
+          <groupfilter function='level-members' level='[none:SV% (bin):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Division,Scf% (bin))' hidden='true' name='[Action (Division,Scf% (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Division]' />
+          <groupfilter function='level-members' level='[Scf% (bin)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Division,TOI (bin))' hidden='true' name='[Action (Division,TOI (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Division]' />
+          <groupfilter function='level-members' level='[none:TOI (bin):ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Division,YEAR(Game))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Division:nk]' />
+          <groupfilter function='level-members' level='[tyr:Game:qk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='200' show-aliased-fields='true' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Division:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Central&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>%all%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;West&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;North&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;East&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='AllDiv.csv' id='AllDiv.csv_69AB7D7E057B44C3A23F4719FDEC3CAB'>
+            <properties context=''>
+              <relation connection='textscan.1xczkzj1u6o7b41bizfu70ymgsne' name='AllDiv.csv' table='[AllDiv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='datetime' date-parse-format='yyyy-MM-HH - &apos;Maple&apos; &apos;Leafs&apos; EEEE, &apos;Senators&apos; dd|#|#|yyyy-MM-dd - &apos;Stars&apos; HH, &apos;Red&apos; &apos;Wings&apos; EEEE|#|#|yyyy-MM-EEEEdd - &apos;Islanders&apos; HH, &apos;Capitals&apos; mm|#|#|yyyy-MM-HH - &apos;Blackhawks&apos; EEEE, &apos;Blue&apos; &apos;Jackets&apos; dd|#|#|yyyy-dd-MMMM - &apos;Bruins&apos; EEEE, &apos;Flyers&apos; HH' name='Game' ordinal='0' />
+                  <column datatype='real' name='TOI' ordinal='1' />
+                  <column datatype='real' name='CF%' ordinal='2' />
+                  <column datatype='real' name='SCF%' ordinal='3' />
+                  <column datatype='real' name='SH%' ordinal='4' />
+                  <column datatype='real' name='SV%' ordinal='5' />
+                  <column datatype='real' name='PDO' ordinal='6' />
+                  <column datatype='string' name='Division' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_60D83497462A4C9A8B9DC4C2C131A1F2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='SV%' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_55453A9C898E4D66885CE192FF3D6A3D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='TOI' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_7F7F1CFA05AC45B398164992E4ED6EFB]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Avg SH%' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_AD6994793E604337BCBA72CDA363554D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Scoring Chances %' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action6_DFF613315AF147149F297AA6C0E5FD93]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='TOI' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action7_0EA920424FB2448290FA83F10602D1B8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Corsi %' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action8_1E3A0DEDE9AC46498AF839FE086FDDE0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 9' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 8 (generated)' name='[Action8_E771FDBFD8E74FA8B8D129A13F95C02C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 8' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avf SH%'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg SV% &#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+            <column caption='Scf%' datatype='real' name='[SCF%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='SH% (bin)' datatype='integer' name='[SH% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[SH%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+            <column datatype='real' name='[SV%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Scf% (bin)' datatype='integer' name='[Scf% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[SCF%]' peg='0' size='2.69' />
+            </column>
+            <column aggregation='None' datatype='integer' name='[TOI (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[TOI]' peg='0' size='1.31' />
+            </column>
+            <column datatype='real' name='[TOI]' role='measure' type='quantitative' />
+            <column-instance column='[SV%]' derivation='Avg' name='[avg:SV%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_0EA920424FB2448290FA83F10602D1B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CF% (bin):ok]' />
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[tyr:Game:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='level-members' level='[Division]' user:ui-action-filter='[Action5_138A65335C634164AB196D0D0353A3DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_1E3A0DEDE9AC46498AF839FE086FDDE0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[SH% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_AD6994793E604337BCBA72CDA363554D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[Scf% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_DFF613315AF147149F297AA6C0E5FD93]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:TOI (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SV%:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SV%:qk]' />
+              <text column='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SV%:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{2C4D2F41-9312-4F7E-BACA-5510D8C6E2A2}' />
+    </worksheet>
+    <worksheet name='Avg SH%'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+            <column caption='Scf%' datatype='real' name='[SCF%]' role='measure' type='quantitative' />
+            <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[SV% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[SV%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SV%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Scf% (bin)' datatype='integer' name='[Scf% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[SCF%]' peg='0' size='2.69' />
+            </column>
+            <column aggregation='None' datatype='integer' name='[TOI (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[TOI]' peg='0' size='1.31' />
+            </column>
+            <column datatype='real' name='[TOI]' role='measure' type='quantitative' />
+            <column-instance column='[SH%]' derivation='Avg' name='[avg:SH%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SV% (bin)]' derivation='None' name='[none:SV% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_0EA920424FB2448290FA83F10602D1B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CF% (bin):ok]' />
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[tyr:Game:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='level-members' level='[Division]' user:ui-action-filter='[Action8_E771FDBFD8E74FA8B8D129A13F95C02C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SV% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_60D83497462A4C9A8B9DC4C2C131A1F2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:SV% (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_AD6994793E604337BCBA72CDA363554D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[Scf% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_55453A9C898E4D66885CE192FF3D6A3D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:TOI (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]'>
+            <groupfilter function='level-members' level='[none:Division:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SH%:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SV% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SH%:qk]' scope='cols' value='SH%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4942541122436523' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</rows>
+        <cols>[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SH%:qk]</cols>
+      </table>
+      <simple-id uuid='{1FA99AB5-B4FC-48EB-AEF9-7957F865A2A7}' />
+    </worksheet>
+    <worksheet name='CF%'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column-instance column='[CF%]' derivation='Count' name='[cnt:CF%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='Count' name='[cnt:Division:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:Division:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>43</max>
+          </filter>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:Division:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[none:CF% (bin):qk]' scope='cols' value='CF% ' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:CF%:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:CF%:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:CF%:qk]</rows>
+        <cols>([federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk] * [federated.1ar3oy40uje651130bsar01dkbr8].[none:CF% (bin):qk])</cols>
+        <show-full-range>
+          <column>[federated.1ar3oy40uje651130bsar01dkbr8].[CF% (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E3D8B731-4992-4A0B-8B35-1C7FBBCF4405}' />
+    </worksheet>
+    <worksheet name='Corsi %'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+            <column caption='Scf%' datatype='real' name='[SCF%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='SH% (bin)' datatype='integer' name='[SH% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[SH%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[SV% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[SV%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SV%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Scf% (bin)' datatype='integer' name='[Scf% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[SCF%]' peg='0' size='2.69' />
+            </column>
+            <column aggregation='None' datatype='integer' name='[TOI (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[TOI]' peg='0' size='1.31' />
+            </column>
+            <column datatype='real' name='[TOI]' role='measure' type='quantitative' />
+            <column-instance column='[CF%]' derivation='Count' name='[cnt:CF%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SV% (bin)]' derivation='None' name='[none:SV% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='level-members' level='[Division]' user:ui-action-filter='[Action5_138A65335C634164AB196D0D0353A3DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_1E3A0DEDE9AC46498AF839FE086FDDE0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[SH% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SV% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_60D83497462A4C9A8B9DC4C2C131A1F2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:SV% (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_AD6994793E604337BCBA72CDA363554D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[Scf% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_DFF613315AF147149F297AA6C0E5FD93]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:TOI (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Exclusions (Division,YEAR(Game))]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Division:nk]' />
+              <groupfilter function='level-members' level='[tyr:Game:qk]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]'>
+            <groupfilter function='level-members' level='[none:Division:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;East&quot;</bucket>
+              <bucket>&quot;West&quot;</bucket>
+              <bucket>&quot;Central&quot;</bucket>
+              <bucket>&quot;North&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Exclusions (Division,YEAR(Game))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SV% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+          <_.fcp.AllowCalculationsForDensifiedMarks.true...calcs-on-densified-marks value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[none:CF% (bin):qk]' scope='cols' value='CF% ' />
+            <encoding attr='space' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[tyr:Game:qk]' field-type='quantitative' max='#2021-01-01 00:00:00#' min='#2021-01-01 00:00:00#' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1ar3oy40uje651130bsar01dkbr8].[none:CF% (bin):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1ar3oy40uje651130bsar01dkbr8].[tyr:Game:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:CF%:qk]</rows>
+        <cols>([federated.1ar3oy40uje651130bsar01dkbr8].[none:CF% (bin):qk] + [federated.1ar3oy40uje651130bsar01dkbr8].[tyr:Game:qk])</cols>
+        <_.fcp.ExtendTimeSeries.true...extend-time-series>
+          <extended-column column='[federated.1ar3oy40uje651130bsar01dkbr8].[Game]' num-periods='100' period-type='year' />
+        </_.fcp.ExtendTimeSeries.true...extend-time-series>
+      </table>
+      <simple-id uuid='{0D51F36C-8AC8-4B8E-ACE3-18EB0CE4E4A4}' />
+    </worksheet>
+    <worksheet name='SV%'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[SV% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[SV%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SV%]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[TOI (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[TOI]' peg='0' size='1.31' />
+            </column>
+            <column datatype='real' name='[TOI]' role='measure' type='quantitative' />
+            <column-instance column='[SV%]' derivation='Count' name='[cnt:SV%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SV% (bin)]' derivation='None' name='[none:SV% (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='level-members' level='[Division]' user:ui-action-filter='[Action3_7F7F1CFA05AC45B398164992E4ED6EFB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_55453A9C898E4D66885CE192FF3D6A3D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:TOI (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]'>
+            <groupfilter function='level-members' level='[none:Division:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[none:SV% (bin):qk]' field-type='quantitative' max='104.0' min='60.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[none:SV% (bin):qk]' scope='cols' value='SV% ' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:SV%:qk]</rows>
+        <cols>([federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk] * [federated.1ar3oy40uje651130bsar01dkbr8].[none:SV% (bin):qk])</cols>
+        <show-full-range>
+          <column>[federated.1ar3oy40uje651130bsar01dkbr8].[SV% (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{AA80C605-4CEE-4281-9C90-ADEB552C6CE1}' />
+    </worksheet>
+    <worksheet name='Scoring Chances %'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+            <column caption='Scf%' datatype='real' name='[SCF%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='SH% (bin)' datatype='integer' name='[SH% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[SH%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Scf% (bin)' datatype='integer' name='[Scf% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[SCF%]' peg='0' size='2.69' />
+            </column>
+            <column aggregation='None' datatype='integer' name='[TOI (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[TOI]' peg='0' size='1.31' />
+            </column>
+            <column datatype='real' name='[TOI]' role='measure' type='quantitative' />
+            <column-instance column='[SCF%]' derivation='Count' name='[cnt:SCF%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Scf% (bin)]' derivation='None' name='[none:Scf% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_0EA920424FB2448290FA83F10602D1B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CF% (bin):ok]' />
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[tyr:Game:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='level-members' level='[Division]' user:ui-action-filter='[Action3_7F7F1CFA05AC45B398164992E4ED6EFB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_1E3A0DEDE9AC46498AF839FE086FDDE0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[SH% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_DFF613315AF147149F297AA6C0E5FD93]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:TOI (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]'>
+            <groupfilter function='level-members' level='[none:Division:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Central&quot;</bucket>
+              <bucket>&quot;West&quot;</bucket>
+              <bucket>&quot;East&quot;</bucket>
+              <bucket>&quot;North&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:SCF%:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk] * [federated.1ar3oy40uje651130bsar01dkbr8].[cnt:SCF%:qk])</rows>
+        <cols>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Scf% (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{F4FEA427-025B-4CE6-9418-0156444640C8}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Divisions&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+            <column caption='Scf%' datatype='real' name='[SCF%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='SH% (bin)' datatype='integer' name='[SH% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[SH%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Scf% (bin)' datatype='integer' name='[Scf% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[SCF%]' peg='0' size='2.69' />
+            </column>
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_0EA920424FB2448290FA83F10602D1B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CF% (bin):ok]' />
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[tyr:Game:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='level-members' level='[Division]' user:ui-action-filter='[Action5_138A65335C634164AB196D0D0353A3DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_1E3A0DEDE9AC46498AF839FE086FDDE0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[SH% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_AD6994793E604337BCBA72CDA363554D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[Scf% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]'>
+            <groupfilter function='level-members' level='[none:Division:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D9B2C506-4E1A-47D0-998A-09F4B657B97A}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Shooting %</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+            <column aggregation='None' caption='SH% (bin)' datatype='integer' name='[SH% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[SH%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+            <column-instance column='[SH%]' derivation='Count' name='[cnt:SH%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SH% (bin)]' derivation='None' name='[none:SH% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_0EA920424FB2448290FA83F10602D1B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CF% (bin):ok]' />
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[tyr:Game:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='member' level='[Division]' member='&quot;North&quot;' user:ui-action-filter='[Action8_E771FDBFD8E74FA8B8D129A13F95C02C]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]'>
+            <groupfilter function='level-members' level='[none:Division:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:SH% (bin):ok]'>
+            <groupfilter from='0' function='range' level='[none:SH% (bin):ok]' to='8' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:SH% (bin):ok]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:SH%:qk]' scope='rows' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk] * [federated.1ar3oy40uje651130bsar01dkbr8].[cnt:SH%:qk])</rows>
+        <cols>[federated.1ar3oy40uje651130bsar01dkbr8].[none:SH% (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1ar3oy40uje651130bsar01dkbr8].[SH% (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{3D1BAAFD-BD98-4C8A-BCF5-36064F8A004C}' />
+    </worksheet>
+    <worksheet name='TOI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Time on Ice &#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AllDiv' name='federated.1ar3oy40uje651130bsar01dkbr8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ar3oy40uje651130bsar01dkbr8'>
+            <column aggregation='None' datatype='integer' name='[CF% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CF%]' peg='0' size='1.59' />
+            </column>
+            <column datatype='real' name='[CF%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Game]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+            <column caption='Scf%' datatype='real' name='[SCF%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='SH% (bin)' datatype='integer' name='[SH% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[SH%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SH%]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[SV% (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[SV%]' peg='0' size='2.9' />
+            </column>
+            <column datatype='real' name='[SV%]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Scf% (bin)' datatype='integer' name='[Scf% (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[SCF%]' peg='0' size='2.69' />
+            </column>
+            <column aggregation='None' datatype='integer' name='[TOI (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[TOI]' peg='0' size='1.31' />
+            </column>
+            <column datatype='real' name='[TOI]' role='measure' type='quantitative' />
+            <column-instance column='[TOI]' derivation='Count' name='[cnt:TOI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CF% (bin)]' derivation='None' name='[none:CF% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SV% (bin)]' derivation='None' name='[none:SV% (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TOI (bin)]' derivation='None' name='[none:TOI (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Game]' derivation='Year-Trunc' name='[tyr:Game:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_0EA920424FB2448290FA83F10602D1B8]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CF% (bin):ok]' />
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[tyr:Game:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]'>
+            <groupfilter function='level-members' level='[Division]' user:ui-action-filter='[Action3_7F7F1CFA05AC45B398164992E4ED6EFB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_1E3A0DEDE9AC46498AF839FE086FDDE0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[SH% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SV% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_60D83497462A4C9A8B9DC4C2C131A1F2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:SV% (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_AD6994793E604337BCBA72CDA363554D]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[Scf% (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_142A67863EF04DA0AB5E0A204BFBFB55]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Division]' />
+              <groupfilter function='level-members' level='[none:TOI (bin):ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]'>
+            <groupfilter function='level-members' level='[none:Division:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Central&quot;</bucket>
+              <bucket>&quot;East&quot;</bucket>
+              <bucket>&quot;West&quot;</bucket>
+              <bucket>&quot;North&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,TOI (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division)]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SV% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,Scf% (bin))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (CF% (bin),Division,YEAR(Game))]</column>
+            <column>[federated.1ar3oy40uje651130bsar01dkbr8].[Action (Division,SH% (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ar3oy40uje651130bsar01dkbr8].[none:TOI (bin):qk]' scope='cols' value='TOI (min)' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='Tableau Light' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ar3oy40uje651130bsar01dkbr8].[cnt:TOI:qk]</rows>
+        <cols>([federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk] * [federated.1ar3oy40uje651130bsar01dkbr8].[none:TOI (bin):qk])</cols>
+        <show-full-range>
+          <column>[federated.1ar3oy40uje651130bsar01dkbr8].[TOI (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{2037A385-3ED7-49A9-AA70-AE1FAE125F25}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97720' id='34' param='horz' type-v2='layout-flow' w='98698' x='651' y='1140'>
+            <zone h='97720' id='25' type-v2='layout-basic' w='98698' x='651' y='1140'>
+              <zone h='92025' id='16' param='horz' type-v2='layout-flow' w='98698' x='651' y='6835'>
+                <zone h='92025' id='5' type-v2='layout-basic' w='98698' x='651' y='6835'>
+                  <zone h='22633' id='9' name='SV%' show-title='false' w='49349' x='651' y='76227'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='24125' id='14' name='TOI' w='60339' x='39010' y='6835'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='69392' id='18' name='Avg SH%' w='38359' x='651' y='6835'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='22633' id='32' name='Corsi %' w='49349' x='50000' y='76227'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45267' id='38' name='Scoring Chances %' w='60339' x='39010' y='30960'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone forceUpdate='true' h='5695' id='23' type-v2='text' w='98698' x='651' y='1140'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontsize='18'>Covid-19 NHL Divisional Play. Was the North really the weakest?</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4822' id='31' type-v2='text' w='8511' x='73838' y='73938'>
+          <formatted-text>
+            <run>We can see that </run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='55' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='5695' id='23' type-v2='text' w='98698' x='651' y='1140'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='18'>Covid-19 NHL Divisional Play. Was the North really the weakest?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69392' id='18' is-fixed='true' name='Avg SH%' w='38359' x='651' y='6835'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='185' h='24125' id='14' is-fixed='true' name='TOI' w='60339' x='39010' y='6835'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45267' id='38' is-fixed='true' name='Scoring Chances %' w='60339' x='39010' y='30960'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4822' id='31' type-v2='text' w='8511' x='73838' y='73938'>
+                  <formatted-text>
+                    <run>We can see that </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='173' h='22633' id='9' is-fixed='true' name='SV%' show-title='false' w='49349' x='651' y='76227'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='173' h='22633' id='32' is-fixed='true' name='Corsi %' w='49349' x='50000' y='76227'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4C86969E-EEE9-4FE5-9CB7-1586F9AA7C0B}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='28' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='26' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='94000' id='20' param='horz' type-v2='layout-flow' w='82400' x='800' y='5000'>
+                <zone h='94000' id='15' type-v2='layout-basic' w='82400' x='800' y='5000'>
+                  <zone h='94000' id='13' param='horz' type-v2='layout-flow' w='82400' x='800' y='5000'>
+                    <zone h='94000' id='5' type-v2='layout-basic' w='82400' x='800' y='5000'>
+                      <zone h='37250' id='3' name='Scoring Chances %' w='41200' x='800' y='5000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='26750' id='8' name='Corsi %' w='82400' x='800' y='42250'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='30000' id='22' name='TOI' w='82400' x='800' y='69000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='37250' id='38' name='Sheet 9' w='41200' x='42000' y='5000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone forceUpdate='true' h='4000' id='23' type-v2='text' w='82400' x='800' y='1000'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Bold' fontsize='18'>Covid-19 NHL Divisional Play. Was the North really the weakest?</run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='27' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='19000' id='35' name='Sheet 8' w='16000' x='83200' y='1000'>
+                <layout-cache fixed-size-h='144' fixed-size-w='142' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19000' id='25' name='Avf SH%' w='16000' x='83200' y='20000'>
+                <layout-cache fixed-size-h='144' fixed-size-w='142' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='29' name='Avf SH%' pane-specification-id='0' param='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SV%:qk]' type-v2='color' w='16000' x='83200' y='39000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='42375' id='24' type-v2='text' w='16300' x='82900' y='49500'>
+          <formatted-text>
+            <run fontcolor='#000000'>From our data comparing divisional play in the 2020-21 Covid-19 NHL season we can see that the North Division struggled to play consistently throughout the season. Comparing the statistics in the dashboard they are competing well but the inconsistency is seen. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>This proves that the North were struggling but the differences are so marginally small that to call them the worst division out of proportion.</run>
+            <run>Æ&#10;&#10;&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='14000' id='30' type-v2='text' w='28800' x='48800' y='45250'>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='10'>The North divisions Corsi % was seen to fluctuate more than the other divisions. This shows that they were playing inconsistiently.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='50' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='49' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='4000' id='23' type-v2='text' w='82400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='18'>Covid-19 NHL Divisional Play. Was the North really the weakest?</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='19000' id='35' is-fixed='true' name='Sheet 8' w='16000' x='83200' y='1000'>
+                  <layout-cache fixed-size-h='144' fixed-size-w='142' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='3' is-fixed='true' name='Scoring Chances %' w='41200' x='800' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='38' is-fixed='true' name='Sheet 9' w='41200' x='42000' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='19000' id='25' is-fixed='true' name='Avf SH%' w='16000' x='83200' y='20000'>
+                  <layout-cache fixed-size-h='144' fixed-size-w='142' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='29' name='Avf SH%' pane-specification-id='0' param='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SV%:qk]' type-v2='color' w='16000' x='83200' y='39000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='206' h='26750' id='8' is-fixed='true' name='Corsi %' w='82400' x='800' y='42250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='14000' id='30' type-v2='text' w='28800' x='48800' y='45250'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='10'>The North divisions Corsi % was seen to fluctuate more than the other divisions. This shows that they were playing inconsistiently.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='42375' id='24' type-v2='text' w='16300' x='82900' y='49500'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>From our data comparing divisional play in the 2020-21 Covid-19 NHL season we can see that the North Division struggled to play consistently throughout the season. Comparing the statistics in the dashboard they are competing well but the inconsistency is seen. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>This proves that the North were struggling but the differences are so marginally small that to call them the worst division out of proportion.</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='232' h='30000' id='22' is-fixed='true' name='TOI' w='82400' x='800' y='69000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{42B4D917-4A2C-4311-BC6B-96C0C15BCB73}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='2'>
+    <window class='worksheet' name='SV%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BEB886F-D9B4-4ABC-9CEB-A9683D52B3CD}' />
+    </window>
+    <window class='worksheet' name='Avf SH%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ar3oy40uje651130bsar01dkbr8].[avg:SV%:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{318306C6-575A-4049-8249-52D32F5F4044}' />
+    </window>
+    <window class='worksheet' name='TOI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2399173-1C69-4C46-A5B6-919D85B015A0}' />
+    </window>
+    <window class='worksheet' name='Avg SH%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='80'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9947FD3D-8918-4F2B-9686-2D04AFBD86AA}' />
+    </window>
+    <window class='worksheet' name='CF%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{80652AF1-DFE7-4669-8158-49C5C2B15C7D}' />
+    </window>
+    <window class='worksheet' name='Corsi %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3AFFD55A-4A90-4C66-B7B0-9AB07AAFF0A2}' />
+    </window>
+    <window class='worksheet' name='Scoring Chances %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D12224E4-00E4-43C8-B9C3-6676607F4AF1}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Avg SH%'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Corsi %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='SV%' />
+        <viewpoint name='Scoring Chances %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='TOI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6CC718E4-EDC4-431C-9B32-503975FDBE12}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Avf SH%' />
+        <viewpoint name='Corsi %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Scoring Chances %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8' />
+        <viewpoint name='Sheet 9'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='TOI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='35' />
+      <simple-id uuid='{FF28AB82-1B6B-4496-908C-3A4D6C376288}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ar3oy40uje651130bsar01dkbr8].[none:Division:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7CEA5535-5BAC-4DC0-B853-B5B81C67DFB3}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1FCC856F-0B23-4A77-99C6-4E32D400E566}' />
+    </window>
+  </windows>
+</workbook>
